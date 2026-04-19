@@ -1,3 +1,5 @@
+package hash.extendable;
+
 import java.util.Map;
 import java.util.Objects;
 
