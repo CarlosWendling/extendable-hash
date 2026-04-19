@@ -36,6 +36,7 @@ public class Main {
         assert ht.get("inexistente") == null : "Falha: chave inexistente deve retornar null";
         System.out.println("  [OK] Insercao e busca basica");
         ht.printStructure();
+        DotExporter.export(ht, "test1_basic");
     }
 
     private static void testUpdate() {
@@ -50,6 +51,7 @@ public class Main {
         assert ht.get("nome").equals("Maria") : "Falha: valor atualizado";
         System.out.println("  [OK] Atualizacao de valor");
         ht.printStructure();
+        DotExporter.export(ht, "test2_update");
     }
 
     private static void testSplit() {
@@ -68,6 +70,7 @@ public class Main {
         assert ht.get(3) != null : "Falha: chave3 apos split";
         System.out.println("  [OK] Split de bucket funcionando");
         ht.printStructure();
+        DotExporter.export(ht, "test3_split");
     }
 
     private static void testRemoveAndMerge() {
@@ -81,6 +84,7 @@ public class Main {
 
         System.out.println("  --- Bucket structure after inserts ---");
         ht.printStructure();
+        DotExporter.export(ht, "test4_remove_before");
 
         System.out.println("  Removendo todas as chaves...");
         ht.remove(1);
@@ -92,6 +96,7 @@ public class Main {
         assert ht.get(3) == null : "Falha: chave3 deve ser null apos remocao";
         System.out.println("  [OK] Remocao e merge funcionando");
         ht.printStructure();
+        DotExporter.export(ht, "test4_remove_after");
     }
 
     private static void testFullScenario() {
@@ -112,6 +117,7 @@ public class Main {
 
         System.out.println("  --- Bucket structure after all inserts ---");
         ht.printStructure();
+        DotExporter.export(ht, "test5_full_after_inserts");
 
         System.out.println("  Removendo chaves pares...");
         for (int i = 0; i < 10; i += 2) {
@@ -129,5 +135,6 @@ public class Main {
 
         System.out.println("  [OK] Cenario completo");
         ht.printStructure();
+        DotExporter.export(ht, "test5_full_after_removes");
     }
 }
