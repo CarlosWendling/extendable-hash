@@ -18,9 +18,9 @@ public class Hashtable<K, V> {
         this.directory[0] = new Bucket<>(bucketCapacity, 0);
     }
 
-    // Mascara: pega os 'globalDepth' bits menos significativos do hashCode para achar o indice do diretorio.
+    // Hash usando modulo pelo tamanho do diretorio (conforme proposta: mod %).
     private int hash(K key) {
-        return key.hashCode() & ((1 << globalDepth) - 1);
+        return Math.abs(key.hashCode()) % directory.length;
     }
 
     // Exposto apenas para logging nos testes (ver Main.java).
