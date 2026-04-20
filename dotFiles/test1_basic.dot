@@ -1,7 +1,7 @@
 digraph "test1_basic" {
   rankdir=LR;
   node [shape=box, fontname=Arial];
-  dir [label="Directory\n(globalDepth=0)\n[0] -> bucket1163157884\n"];
-  bucket0 [label="bucket0\nlocalDepth=0\ncount=3/3\nchave1 = 10\nchave2 = 20\nchave3 = 30\n"];
+  dir [label="Directory\n(globalDepth=0)\n[0] -> bucket2001049719\n"];
+  bucket0 [label="bucket0\nlocalDepth=0\ncount=3/3\nchave1 = 10\nchave3 = 30\nchave2 = 20\n"];
   dir -> bucket0 [label="0"];
 }

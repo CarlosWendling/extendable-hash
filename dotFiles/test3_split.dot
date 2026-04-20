@@ -1,9 +1,9 @@
 digraph "test3_split" {
   rankdir=LR;
   node [shape=box, fontname=Arial];
-  dir [label="Directory\n(globalDepth=1)\n[0] -> bucket692404036\n[1] -> bucket1554874502\n"];
+  dir [label="Directory\n(globalDepth=1)\n[0] -> bucket664223387\n[1] -> bucket824909230\n"];
+  bucket1 [label="bucket1\nlocalDepth=1\ncount=2/2\n3 = tres\n1 = um\n"];
   bucket0 [label="bucket0\nlocalDepth=1\ncount=1/2\n2 = dois\n"];
-  bucket1 [label="bucket1\nlocalDepth=1\ncount=2/2\n1 = um\n3 = tres\n"];
   dir -> bucket0 [label="0"];
   dir -> bucket1 [label="1"];
 }

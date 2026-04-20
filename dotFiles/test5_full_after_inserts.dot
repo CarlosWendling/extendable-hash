@@ -1,11 +1,11 @@
 digraph "test5_full_after_inserts" {
   rankdir=LR;
   node [shape=box, fontname=Arial];
-  dir [label="Directory\n(globalDepth=2)\n[0] -> bucket1627674070\n[1] -> bucket1360875712\n[2] -> bucket1625635731\n[3] -> bucket1580066828\n"];
-  bucket1 [label="bucket1\nlocalDepth=2\ncount=3/3\nitem0 = 0\nitem4 = 40\nitem8 = 80\n"];
-  bucket3 [label="bucket3\nlocalDepth=2\ncount=2/3\nitem2 = 20\nitem6 = 60\n"];
+  dir [label="Directory\n(globalDepth=2)\n[0] -> bucket1028214719\n[1] -> bucket500977346\n[2] -> bucket20132171\n[3] -> bucket186370029\n"];
+  bucket1 [label="bucket1\nlocalDepth=2\ncount=3/3\nitem4 = 40\nitem8 = 80\nitem0 = 0\n"];
   bucket2 [label="bucket2\nlocalDepth=2\ncount=3/3\nitem1 = 10\nitem5 = 50\nitem9 = 90\n"];
-  bucket0 [label="bucket0\nlocalDepth=2\ncount=2/3\nitem3 = 30\nitem7 = 70\n"];
+  bucket3 [label="bucket3\nlocalDepth=2\ncount=2/3\nitem2 = 20\nitem6 = 60\n"];
+  bucket0 [label="bucket0\nlocalDepth=2\ncount=2/3\nitem7 = 70\nitem3 = 30\n"];
   dir -> bucket0 [label="0"];
   dir -> bucket1 [label="1"];
   dir -> bucket2 [label="2"];
