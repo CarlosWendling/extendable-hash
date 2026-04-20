@@ -1,0 +1,7 @@
+digraph "test2_update" {
+  rankdir=LR;
+  node [shape=box, fontname=Arial];
+  dir [label="Directory\n(globalDepth=0)\n[0] -> bucket312714112\n"];
+  bucket0 [label="bucket0\nlocalDepth=0\ncount=1/2\nnome = Maria\n"];
+  dir -> bucket0 [label="0"];
+}

@@ -38,11 +38,25 @@ cd hash-extensivel
 ### 2. Compile the Project
 
 ```bash
-javac Main.java
+javac hash/extendable/*.java
 ```
 
 ### 3. Run the Application
 
 ```bash
-java Main
+java hash.extendable.Main
 ```
+
+### 4. View Generated Visualizations
+
+After running the application, DOT and SVG files will be generated in the `dotFiles/` and `svgFiles/` directories, respectively. Each test produces a visualization of the hash table structure at key points:
+
+- `test1_basic.dot/svg`: After basic insertions
+- `test2_update.dot/svg`: After value update
+- `test3_split.dot/svg`: After bucket split
+- `test4_remove_before.dot/svg`: Before removals
+- `test4_remove_after.dot/svg`: After removals and merges
+- `test5_full_after_inserts.dot/svg`: After full insertions
+- `test5_full_after_removes.dot/svg`: After partial removals
+
+Open the SVG files in any web browser or image viewer to see the visual representation of the extensible hash table.

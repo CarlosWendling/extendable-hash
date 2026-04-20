@@ -18,6 +18,18 @@ public class Hashtable<K, V> {
         this.directory[0] = new Bucket<>(bucketCapacity, 0);
     }
 
+    public int getGlobalDepth() {
+        return globalDepth;
+    }
+
+    public int getBucketCapacity() {
+        return bucketCapacity;
+    }
+
+    public Bucket<K, V>[] getDirectory() {
+        return directory;
+    }
+
     // Mascara: pega os 'globalDepth' bits menos significativos do hashCode para achar o indice do diretorio.
     private int hash(K key) {
         return key.hashCode() & ((1 << globalDepth) - 1);
