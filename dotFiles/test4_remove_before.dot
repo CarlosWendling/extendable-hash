@@ -1,9 +1,9 @@
 digraph "test4_remove_before" {
   rankdir=LR;
   node [shape=box, fontname=Arial];
-  dir [label="Directory\n(globalDepth=1)\n[0] -> bucket1846274136\n[1] -> bucket1639705018\n"];
+  dir [label="Directory\n(globalDepth=1)\n[0] -> bucket424058530\n[1] -> bucket321001045\n"];
   bucket0 [label="bucket0\nlocalDepth=1\ncount=1/2\n2 = dois\n"];
-  bucket1 [label="bucket1\nlocalDepth=1\ncount=2/2\n1 = um\n3 = tres\n"];
+  bucket1 [label="bucket1\nlocalDepth=1\ncount=2/2\n3 = tres\n1 = um\n"];
   dir -> bucket0 [label="0"];
   dir -> bucket1 [label="1"];
 }

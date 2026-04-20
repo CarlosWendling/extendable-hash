@@ -188,4 +188,8 @@ public class Hashtable<K, V> {
         }
         System.out.println("===========================================");
     }
+
+    public int getGlobalDepth() { return globalDepth; }
+    public Bucket<K, V>[] getDirectory() { return directory; }
+    public int getBucketCapacity() { return bucketCapacity; }
 }

@@ -1,10 +1,10 @@
 digraph "test5_full_after_removes" {
   rankdir=LR;
   node [shape=box, fontname=Arial];
-  dir [label="Directory\n(globalDepth=2)\n[0] -> bucket1627674070\n[1] -> bucket1360875712\n[2] -> bucket1625635731\n[3] -> bucket1360875712\n"];
-  bucket1 [label="bucket1\nlocalDepth=1\ncount=0/3\n"];
+  dir [label="Directory\n(globalDepth=2)\n[0] -> bucket1044036744\n[1] -> bucket1826771953\n[2] -> bucket1406718218\n[3] -> bucket1826771953\n"];
+  bucket0 [label="bucket0\nlocalDepth=2\ncount=2/3\nitem7 = 70\nitem3 = 30\n"];
   bucket2 [label="bucket2\nlocalDepth=2\ncount=3/3\nitem1 = 10\nitem5 = 50\nitem9 = 90\n"];
-  bucket0 [label="bucket0\nlocalDepth=2\ncount=2/3\nitem3 = 30\nitem7 = 70\n"];
+  bucket1 [label="bucket1\nlocalDepth=1\ncount=0/3\n"];
   dir -> bucket0 [label="0"];
   dir -> bucket1 [label="1"];
   dir -> bucket2 [label="2"];

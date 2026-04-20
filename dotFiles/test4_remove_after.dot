@@ -1,7 +1,7 @@
 digraph "test4_remove_after" {
   rankdir=LR;
   node [shape=box, fontname=Arial];
-  dir [label="Directory\n(globalDepth=0)\n[0] -> bucket1639705018\n"];
+  dir [label="Directory\n(globalDepth=0)\n[0] -> bucket321001045\n"];
   bucket0 [label="bucket0\nlocalDepth=0\ncount=0/2\n"];
   dir -> bucket0 [label="0"];
 }
